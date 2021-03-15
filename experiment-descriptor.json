@@ -29,7 +29,14 @@
     },
     {
       "unit-type": "task",
-      "label": "Pre Test",
+      "label": "Pre Test Instructions",
+      "content-type": "video",
+      "source": "pre-test.md",
+      "target": "pre-test.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Pre Test Quiz",
       "content-type": "assesment",
       "source": "pretest.js",
       "target": "pretest.html"
@@ -67,37 +74,35 @@
           "unit-type": "task",
           "label": "DFS : Demo",
           "content-type": "simulation",
-          "source": "simulation/dfsdemo.html",
-          "target": "dfsdemo.html"
+          "source": "simulation/dfs-demo.html",
+          "target": "dfs-demo.html"
         },
         {
           "unit-type": "task",
           "label": "DFS : Practice",
           "content-type": "simulation",
-          "source": "simulation/dfspractice.html",
-          "target": "dfspractice.html"
+          "source": "simulation/dfs-practice.html",
+          "target": "dfs-practice.html"
         },
 	{
           "unit-type": "task",
           "label": "DFS : Exercise",
           "content-type": "simulation",
-          "source": "simulation/dfsexercise.html",
-          "target": "dfsexercise.html"
+          "source": "simulation/dfs-exercise.html",
+          "target": "dfs-exercise.html"
         },
         
 	{
          "unit-type": "task",
-         "label": "Quiz",
+         "label": "DFS Quiz",
          "content-type": "assesment",
          "source": "dfs-quiz.js",
          "target": "dfs-quiz.html"
        }
       
       ]
-    },
-    
-    
-        {
+     },
+     {
       "unit-type": "lu",
       "label": "Analysis",
       "basedir": "analysis",
@@ -130,7 +135,7 @@
         },
         {
           "unit-type": "task",
-          "label": "Quiz",
+          "label": "Analysis Quiz",
           "content-type": "assesment",
           "source": "analysis-quiz.js",
           "target": "analysis-quiz.js"
@@ -139,10 +144,17 @@
     },
     {
       "unit-type": "task",
-      "label": "Post Test",
+      "label": "Post Test Instructions",
       "content-type": "assesment",
-      "source": "posttest.js",
-      "target": "posttest.html"
+      "source": "post-test.md",
+      "target": "post-test.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Post Test Quiz",
+      "content-type": "assesment",
+      "source": "post-test.js",
+      "target": "post-test.html"
     },
        
     {
