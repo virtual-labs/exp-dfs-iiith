@@ -1,7 +1,7 @@
-### Estimated Time
+### Estimated Time for Pre Test Quiz
 
 45 minutes
-### Introduction to Pre-test of the Experiment
+### Introduction for Pre Test Quiz
 
 Pretest includes questions on
 
