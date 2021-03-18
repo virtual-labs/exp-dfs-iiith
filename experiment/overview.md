@@ -1,5 +1,3 @@
-### Welcome to DFS Experiment!
-
 ### Prerequisites of the Experiment
 
    - Basic knowledge of
