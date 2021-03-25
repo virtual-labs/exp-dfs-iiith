@@ -27,13 +27,7 @@
       "source": "graph-traversals.md",
       "target": "graph-traversals.html"
     },
-    {
-      "unit-type": "task",
-      "label": "Pre Test Quiz Instructions",
-      "content-type": "video",
-      "source": "pre-test.md",
-      "target": "pre-test.html"
-    },
+    
     {
       "unit-type": "task",
       "label": "Pre Test Quiz",
@@ -49,13 +43,7 @@
         {
           "unit-type": "aim"
         },
-        {
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+        
 	{
           "unit-type": "task",
           "label": "DFS Concept",
@@ -72,21 +60,21 @@
         },
         {
           "unit-type": "task",
-          "label": "DFS : Demo",
+          "label": "Demo",
           "content-type": "simulation",
           "source": "simulation/dfs-demo.html",
           "target": "dfs-demo.html"
         },
         {
           "unit-type": "task",
-          "label": "DFS : Practice",
+          "label": "Practice",
           "content-type": "simulation",
           "source": "simulation/dfs-practice.html",
           "target": "dfs-practice.html"
         },
 	{
           "unit-type": "task",
-          "label": "DFS : Exercise",
+          "label": "Exercise",
           "content-type": "simulation",
           "source": "simulation/dfs-exercise.html",
           "target": "dfs-exercise.html"
@@ -94,7 +82,7 @@
         
 	{
          "unit-type": "task",
-         "label": "DFS Quiz",
+         "label": "Quiz",
          "content-type": "assesment",
          "source": "dfs-quiz.js",
          "target": "dfs-quiz.html"
@@ -135,7 +123,7 @@
         },
         {
           "unit-type": "task",
-          "label": "Analysis Quiz",
+          "label": "Quiz",
           "content-type": "assesment",
           "source": "analysis-quiz.js",
           "target": "analysis-quiz.html"
