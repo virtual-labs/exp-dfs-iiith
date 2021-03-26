@@ -46,14 +46,14 @@
         
 	{
           "unit-type": "task",
-          "label": "DFS Concept",
+          "label": " Concept",
           "content-type": "video",
           "source": "dfs-concept.md",
           "target": "dfs-concept.html"
         },
         {
           "unit-type": "task",
-          "label": "DFS : Algorithm",
+          "label": " Algorithm",
           "content-type": "video",
           "source": "dfs-algorithm.md",
           "target": "dfs-algorithm.html"
@@ -98,16 +98,10 @@
         {
           "unit-type": "aim"
         },
-	{
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+	
         {
           "unit-type": "task",
-          "label": "Space and Time Complexitiy of DFS",
+          "label": "Space and Time Complexitiy ",
           "content-type": "video",
           "source": "space-and-time-complexitiy-of-dfs.md",
           "target": "space-and-time-complexitiy-of-dfs.html"
