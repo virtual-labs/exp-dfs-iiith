@@ -101,7 +101,7 @@ correctAnswer: "a" ///// Write the correct option inside double quotes
 },
 
 {
-question: "2.  In Depth First Search, how many times does a node visited?",  ///// Write the question inside double quotes
+question: "2. In Depth First Search, how many times does a node visited?",  ///// Write the question inside double quotes
 answers: {
 a: "Once",                  ///// Write the option 1 inside double quotes
 b: "Twice ",                  ///// Write the option 2 inside double quotes
@@ -122,7 +122,7 @@ correctAnswer: "a"                ///// Write the correct option inside double q
 },
 
 {
-question: "4.All Graphs have unique representation on paper.",  ///// Write the question inside double quotes
+question: "4. All Graphs have unique representation on paper.",  ///// Write the question inside double quotes
 answers: {
 a: "True",                  ///// Write the option 1 inside double quotes
 b: "False",                  ///// Write the option 2 inside double quotes
