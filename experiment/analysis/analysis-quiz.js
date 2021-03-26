@@ -90,27 +90,36 @@
 
 
      const myQuestions = [{
-            question: "1. Which of the following is true?", ///// Write the question inside double quotes
+            question: "1. Time Complexity of DFS is _____. (V – number of vertices, E – number of edges)", ///// Write the question inside double quotes
             answers: {
-                a: "A graph may contain no edges and many vertices", ///// Write the option 1 inside double quotes
-                b: " A graph may contain many edges and no vertices ", ///// Write the option 2 inside double quotes
-                c: "A graph may contain no edges and no vertices ", ///// Write the option 2 inside double quotes
-                d: "None of the mentioned ", ///// Write the option 2 inside double quotes
+                a: "O(V + E) ", ///// Write the option 1 inside double quotes
+                b: " O(V) ", ///// Write the option 2 inside double quotes
+                c: " O(E) ", ///// Write the option 2 inside double quotes
+                d: "None of these ", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "2. Which of the following is true about graphs?",  ///// Write the question inside double quotes
+      question: "2. What data structures are used to implement BFS and DFS respectively?",  ///// Write the question inside double quotes
       answers: {
-        a: " Each node can only store integers ",                  ///// Write the option 1 inside double quotes
-        b: " Consecutive nodes need to be stored sequentially in memory ",                  ///// Write the option 2 inside double quotes
-	c: "Both of the above", ///// Write the option 3 inside double quotes
-        d: "None of the above ", ///// Write the option 4 inside double quotes
+        a: " Linked Lists and Stacks  ",                  ///// Write the option 1 inside double quotes
+        b: " Queues and Stacks ",                  ///// Write the option 2 inside double quotes
+	c: "Stacks and Queues", ///// Write the option 3 inside double quotes
+        d: "All of the above ", ///// Write the option 4 inside double quotes
+             },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    },
+ {
+      question: "3. What strategies are used in BFS and DFS traversals respectively?",  ///// Write the question inside double quotes
+      answers: {
+        a: "Level by level and depth wise  ",                  ///// Write the option 1 inside double quotes
+        b: " Depth wise and level by level  ",                  ///// Write the option 2 inside double quotes
+	c: "Children before siblings and siblings before children ", ///// Write the option 3 inside double quotes
+        d: "Siblings before children and children before siblings ", ///// Write the option 4 inside double quotes
              },
       correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
-
 
      ];
 

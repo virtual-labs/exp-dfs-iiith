@@ -1,6 +1,6 @@
 ### Learning Objectives of the Experiment
 
-In this experiment, we will:
+In this experiment, we will be learn about:
 
    - Understand the basics of graphs and their representations.
    - Understand the working of Depth First Traversal Algorithm for searching nodes.

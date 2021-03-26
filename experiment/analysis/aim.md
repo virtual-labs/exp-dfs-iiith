@@ -2,11 +2,11 @@
 
 15 minutes
 
-### Learning Objectives of this Module
+### Learning Objectives of the Module
+Take a look at what we will learn in this module
 
-In this module, we will be learning about:
-
-   - Time and Space Complexity: We will learn about the running time of the sorting process.
-   - Comparison with other algorithms: We will compare quick sort with other sorting algorithms and see in which situations quick sort is the optimal approach to take.
+   - Space and Time complexity of DFS
+   - Comparision of BFS and DFS
+   - Quiz to test your understanding on topics covered in analysis learning unit
 
 
