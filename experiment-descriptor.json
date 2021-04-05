@@ -27,14 +27,6 @@
       "source": "graph-traversals.md",
       "target": "graph-traversals.html"
     },
-    
-    {
-      "unit-type": "task",
-      "label": "Pre Test Quiz",
-      "content-type": "assesment",
-      "source": "pretest.js",
-      "target": "pretest.html"
-    },
     {
       "unit-type": "lu",
       "label": "Depth First Search",
@@ -78,15 +70,7 @@
           "content-type": "simulation",
           "source": "simulation/dfs-exercise.html",
           "target": "dfs-exercise.html"
-        },
-        
-	{
-         "unit-type": "task",
-         "label": "Quiz",
-         "content-type": "assesment",
-         "source": "dfs-quiz.js",
-         "target": "dfs-quiz.html"
-       }
+        }
       
       ]
      },
@@ -114,23 +98,8 @@
           "content-type": "video",
           "source": "comparison-of-bfs-with-dfs.md",
           "target": "comparison-of-bfs-with-dfs.html"
-        },
-        {
-          "unit-type": "task",
-          "label": "Quiz",
-          "content-type": "assesment",
-          "source": "analysis-quiz.js",
-          "target": "analysis-quiz.html"
         }
       ]
-    },
-    
-    {
-      "unit-type": "task",
-      "label": "Post Test Quiz",
-      "content-type": "assesment",
-      "source": "posttest.js",
-      "target": "posttest.html"
     },
        
     {
