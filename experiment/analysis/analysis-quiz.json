@@ -1,0 +1,19 @@
+[{
+	"question": "1. If there are 10 edges in a graph, in the worst case how many edges can be traversed?",
+	"answers": {
+		"a": "0",
+		"b": "1 ",
+		"c": " 5 ",
+		"d": "10 "
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "2. Which one of the following is correct?",
+	"answers": {
+		"a": " DFS uses queue & BFS can be done using stack & recursion.  ",
+		"b": " In DFS, all the neighbors are traversed before other nodes. ",
+		"c": "DFS is a vertex-based algorithm while BFS is an edge-based algorithm.",
+		"d": "BFS is an optimal algorithm while DFS is not optimal."
+	},
+	"correctAnswer": "d"
+}]

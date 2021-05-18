@@ -1,1 +1,62 @@
-[{"question":"1. Select one of the applications of Depth First Search?","answers":{"a":"Generating topological sort of a graph ","b":"Generating strongly connected components of a directed graph ","c":"Detecting cycles in the graph ","d":" All of these"},"correctAnswer":"a"},{"question":"2. In Depth First Search, how many times does a node visited?","answers":{"a":"Once","b":"Twice ","c":" Equivalent to number of indegree of the node","d":"None of these "},"correctAnswer":"a"},{"question":"3. While running DFS on a directed graph, if from vertex 'u', we visit a finished vertex 'v', then the edge(u,v)is a cross-edge. ","answers":{"a":"True","b":"False"},"correctAnswer":"a"},{"question":"4. All Graphs have unique representation on paper.","answers":{"a":"True","b":"False"},"correctAnswer":"b"}]
+[{
+	"question": "1. Which one of the following steps is incorrect when performing DFS?",
+	"answers": {
+		"a": " STEP 1: Start by putting any one of the graph's vertices on top of a stack (acts as source node of DFS).",
+		"b": "STEP 2: Take the top item of the stack and set its visited as 1. ",
+		"c": "STEP 3: Create a list of that vertex's adjacent nodes. Add the ones whose visited is 1 to the top of the stack. ",
+		"d": " STEP 4: Keep repeating steps 2 and 3 until the stack is empty. "
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "2. What is the time complexity of DFS? V is the number of vertices & E is the number of edges",
+	"answers": {
+		"a": "O(V^2) ",
+		"b": "O(V+E)",
+		"c": "O(E^2) ",
+		"d": "O(VlogV)"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "3. Pick the incorrect option",
+	"answers": {
+		"a": "BFS consumes more memory & DFS consumes less memory",
+		"b": "DFS goes deeper & deeper until the node has no children ",
+		"c": " BFS involves traversing neighbors before other nodes ",
+		"d": "DFS uses queue"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "4. Which one of the following are applications of DFS?",
+	"answers": {
+		"a": "Topological Sorting ",
+		"b": "Minimum Spanning Tree ",
+		"c": "Finding connected components",
+		"d": "All of the above "
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "5. DFS can only be applied on Trees & not on Graphs.",
+	"answers": {
+		"a": "True  ",
+		"b": "False "
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "6. Pick the incorrect option",
+	"answers": {
+		"a": "DFS uses exhaustive traversal along one path before exploring other options  ",
+		"b": "DFS can be used to find the shortest path between two nodes ",
+		"c": "DFS uses stack or recursion",
+		"d": "DFS can be used in topological sorting"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "7. <img src='images/dfs-posttest-quiz.png'> <br> When we apply DFS on the above graph, which one of the following order of traversal is not possible?",
+	"answers": {
+		"a": "2,7,2,6,5,11,5,9,4  ",
+		"b": "2,7,5,2,6,9,5,11,4 ",
+		"c": "2,7,6,5,11,2,5,9,4",
+		"d": "2,5,9,4,7,2,6,5,11"
+	},
+	"correctAnswer": "b"
+}]
