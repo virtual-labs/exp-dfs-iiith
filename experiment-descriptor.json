@@ -28,6 +28,13 @@
       "target": "graph-traversals.html"
     },
     {
+      "unit-type": "task",
+      "label": "Pretest",
+      "content-type": "assessment",
+      "source": "pretest.json",
+      "target": "pretest.html"
+    },
+    {
       "unit-type": "lu",
       "label": "Depth First Search",
       "basedir": "dfs",
@@ -70,8 +77,14 @@
           "content-type": "simulation",
           "source": "simulation/dfs-exercise.html",
           "target": "dfs-exercise.html"
-        }
-      
+        },
+      {
+      "unit-type": "task",
+      "label": "Quiz",
+      "content-type": "assessment",
+      "source": "dfs-quiz.json",
+      "target": "dfs-quiz.html"
+    }
       ]
      },
      {
@@ -98,10 +111,23 @@
           "content-type": "video",
           "source": "comparison-of-bfs-with-dfs.md",
           "target": "comparison-of-bfs-with-dfs.html"
-        }
+        },
+	{
+      "unit-type": "task",
+      "label": "Quiz",
+      "content-type": "assessment",
+      "source": "analysis-quiz.json",
+      "target": "analysis-quiz.html"
+    }
       ]
     },
-       
+      {
+      "unit-type": "task",
+      "label": "Posttest",
+      "content-type": "assessment",
+      "source": "posttest.json",
+      "target": "posttest.html"
+    }, 
     {
       "unit-type": "task",
       "label": "Further Readings/References",
