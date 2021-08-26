@@ -10,7 +10,7 @@
   /* -webkit-transform: rotate(0deg); */
   transform: rotate(0deg);
   font-family: "OpenSans-Regular", Helvetica, Arial, serif;
-  font-size: 3vw;
+  /* font-size: 3vw; */
   color: rgba(121, 181, 7, 1.0);
   text-align: center;
   letter-spacing: 3.07px;
@@ -75,7 +75,7 @@
   position: absolute;
   left: 4vw;
   font-family: 'OpenSans-Regular';
-  font-size: 1.4vw;
+  /* font-size: 1.4vw; */
 }
 #gen {
   display: none;
