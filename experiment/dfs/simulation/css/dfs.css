@@ -1,6 +1,7 @@
-br {
+/* br {
     font-size: 2vw;
-}
+} */
+
 #graph {
     margin-top: 2.45%;
     position: relative;   
@@ -70,7 +71,7 @@ br {
 #ranger {
   margin-top: 1.5%;
   position: relative;
-  font-size: 1.7vw;
+  /* font-size: 1.7vw; */
   width:93%;
   z-index: 1;
   margin-left: 20%;
