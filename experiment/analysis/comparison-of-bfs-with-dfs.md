@@ -23,7 +23,7 @@
 
 ### DFS traversal on example graph
 
-Similar to BFS lets take the same graph for performing DFS operations. The steps involved in the process are:
+Similar to BFS, let's take the same graph for performing DFS operations. The steps involved in the process are:
 
    - Considering A as the starting vertex which is explored and stored in the stack.
    - B, the successor vertex of A, is stored in the stack.
@@ -31,10 +31,10 @@ Similar to BFS lets take the same graph for performing DFS operations. The steps
    - The successor of vertex E, i.e., G is stored in the stack.
    - Vertex G has two connected vertices, and both are already visited, so G is popped out from the stack.
    - Similarly, E is also removed.
-   - Now vertex B is at the top of the stack, its other node(vertex) F is explored and stored in the stack.
+   - Now vertex B is at the top of the stack, its other successor(vertex) F is explored and stored in the stack.
    - Vertex F has two successors C and D, between which C is traversed first and stored in the stack.
    - Vertex C has only one predecessor which has already been visited, so it is removed from the stack.
-   - Now vertex D which is connected to F is visited and stored in the stack.
+   - Now vertex D, which is connected to F is visited and stored in the stack.
    - Since vertex D does not have any unvisited nodes, D is therefore removed.
    - Similarly, F, B and A are also popped from the stack.
    - The generated output is – A, B, E, G, F, C, D.
