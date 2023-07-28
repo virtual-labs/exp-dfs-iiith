@@ -1,0 +1,46 @@
+[{
+	"question": "1. Which one of the following is an application of a directed graph?",
+	"answers": {
+		"a": " Mobile communication graph",
+		"b": "Water network graph ",
+		"c": "Scheduling courses with prerequisites ",
+		"d": " Graph of friends "
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "2. If m & n represent the number of vertices & edges respectively, then which one of the following can not be true. ",
+	"answers": {
+		"a": "m > 0 & n > 0 ",
+		"b": "m > 0 & n = 0",
+		"c": "m = 0 & n > 0 ",
+		"d": "m = 10000 & n = 1 "
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "3. Which one of the following data structures supports random access of elements?",
+	"answers": {
+		"a": "Linked List",
+		"b": "Tree ",
+		"c": " Array ",
+		"d": "Graph"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "4. In which of the following data structures, you can traverse in only one direction",
+	"answers": {
+		"a": "Undirected graph ",
+		"b": "Doubly linked list ",
+		"c": "Array ",
+		"d": "Directed Graph "
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "5. Which one of the following is an application of a directed graph?",
+	"answers": {
+		"a": "Scheduling courses with prerequisites  ",
+		"b": "Data broadcasting from parent to children nodes ",
+		"c": "Family tree ",
+		"d": "All of the above "
+	},
+	"correctAnswer": "d"
+}]
