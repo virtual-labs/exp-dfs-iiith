@@ -31,7 +31,7 @@
             "expected": true,
             "inputs description": "Input consists of a directed graph represented as an array of edges, where each edge [parent, child] denotes a directed connection from parent to child, and a starting vertex.",
             "expected description": "Boolean indicating whether the graph contains a cycle.",
-            "difficulty": "beginner"
+            "difficulty": "intermediate"
         }
     ]
 }
