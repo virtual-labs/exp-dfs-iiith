@@ -250,7 +250,7 @@ if (dfs_demo.start == 0) {
   document.getElementById('reset').disabled = true
   document.getElementById('reset').style.backgroundColor = 'grey'
   document.getElementById('reset').style.cursor = 'not-allowed'
-  document.getElementById('pause').style.cursor = 'not-allowed'
+  // document.getElementById('pause').style.cursor = 'not-allowed'
 }
 graph.on('click', function (params) {
   dfs_demo.resetter = 0
