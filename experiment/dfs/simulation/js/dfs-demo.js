@@ -314,6 +314,10 @@ function clicking() {
       if (dfs_demo.count == dfs_demo.dfsres[1].length - 1) {
         document.getElementById('ins').innerHTML +=
           '<br>DFS is done on the source node ' + dfs_demo.src
+
+        document.getElementById('pause').disabled = true
+        document.getElementById('pause').style.backgroundColor = 'grey'
+        document.getElementById('pause').style.cursor = 'not-allowed'
       }
     } else {
       dfs_demo.dfscountarr[dfs_demo.dfsres[1][dfs_demo.count].node]--
@@ -348,6 +352,10 @@ function clicking() {
 }
 function reset() {
   document.getElementById('pause').value = 'Start'
+
+  document.getElementById('pause').disabled = false
+  document.getElementById('pause').style.backgroundColor = '#288ec8'
+  document.getElementById('pause').style.cursor = 'pointer'
   for (i = 0; i < dfs_demo.res.length; i++) {
     resetedge(dfs_demo.res[i].id)
     resetnode(dfs_demo.res[i].node)
@@ -369,7 +377,7 @@ function reset() {
   g.dfsres = []
   g.dfscount = 0
   clearInterval(dfs_demo.time)
-    document.getElementById('ins').innerHTML =
+  document.getElementById('ins').innerHTML =
     'Execution is reset, select a node and click on start button to start DFS from that node'
   document.getElementById('interval').value = 1500
   clearInterval(dfs_demo.time)
