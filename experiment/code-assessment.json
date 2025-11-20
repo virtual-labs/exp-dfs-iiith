@@ -1,37 +1,59 @@
 {
-    "version": 1,
-    "experiment name": "Experiment Name",
-    "problems": [
-        {
-            "problem name": "Basic Depth First Search",
-            "description": "You are given the list of edges of a directed graph and the root node. Perform depth first search to find the correct order of visitation of nodes. You are advised to first construct a graph from the edge list then proceed further.",
-            "inputs": [
-                [[1,2], [2,3], [1,4], [4,5], [4,6]],
-                1
-            ],
-            "expected": [1,2,3,4,5,6],
-            "inputs description": "Input consists of an array of edges as [node1, node2]. For node1 as parent, The first of the edges denote the edge with the left child, other latter edge with the right child.",
-            "expected description": "An array of nodes in the correct order of visitation",
-            "difficulty": "beginner"
-        },
-        {
-            "problem name": "Detect Cycle in Directed Graph",
-            "description": "Implement DFS to detect cycles in a directed graph.",
-            "inputs": [
-                [
-                    [0, 1],
-                    [0, 2],
-                    [1, 2],
-                    [2, 0],
-                    [2, 3],
-                    [3, 3]
-                ],
-                0
-            ],
-            "expected": true,
-            "inputs description": "Input consists of a directed graph represented as an array of edges, where each edge [parent, child] denotes a directed connection from parent to child, and a starting vertex.",
-            "expected description": "Boolean indicating whether the graph contains a cycle.",
-            "difficulty": "intermediate"
-        }
-    ]
+  "version": 1,
+  "experiment name": "Depth First Search Implementation",
+  "problems": [
+    {
+      "problem name": "Basic Depth First Search",
+      "description": "Implement DFS traversal for a directed graph using recursion. Build an adjacency list from the edge array, then start from the root node and recursively visit unvisited neighbors, marking nodes as visited to avoid cycles. Use a visited array to track explored nodes and return the order of visitation. Example: edges [[1,2],[2,3],[1,4],[4,5],[4,6]] starting from node 1 should return [1,2,3,4,5,6]. Only JavaScript is allowed.",
+      "inputs": [
+        [
+          [1, 2],
+          [2, 3],
+          [1, 4],
+          [4, 5],
+          [4, 6]
+        ],
+        1
+      ],
+      "expected": [1, 2, 3, 4, 5, 6],
+      "inputs description": "Input consists of an array of edges as [node1, node2]. For node1 as parent, The first of the edges denote the edge with the left child, other latter edge with the right child.",
+      "expected description": "An array of nodes in the correct order of visitation",
+      "difficulty": "beginner"
+    },
+    {
+      "problem name": "Detect Cycle in Directed Graph",
+      "description": "Implement DFS-based cycle detection in a directed graph using three-color approach. Use white (unvisited), gray (currently processing), and black (completely processed) states. During DFS, if you encounter a gray node, a back edge exists indicating a cycle. Mark nodes gray when entering recursion and black when exiting. Example: edges [[0,1],[0,2],[1,2],[2,0],[2,3],[3,3]] contains cycles due to 2→0 creating a loop and 3→3 being a self-loop. Only JavaScript is allowed.",
+      "inputs": [
+        [
+          [0, 1],
+          [0, 2],
+          [1, 2],
+          [2, 0],
+          [2, 3],
+          [3, 3]
+        ],
+        0
+      ],
+      "expected": true,
+      "inputs description": "Input consists of a directed graph represented as an array of edges, where each edge [parent, child] denotes a directed connection from parent to child, and a starting vertex.",
+      "expected description": "Boolean indicating whether the graph contains a cycle.",
+      "difficulty": "intermediate"
+    },
+    {
+      "problem name": "Topological Sort using DFS",
+      "description": "Implement topological sorting for a Directed Acyclic Graph (DAG) using DFS. Perform DFS on all unvisited nodes and use a stack to store nodes in finish time order (post-order). When a node's DFS completes, push it to the stack. The final result is the stack contents in reverse order, giving a valid topological ordering. Example: edges [[0,1],[0,2],[1,3],[2,3]] should return [0,1,2,3] or [0,2,1,3] as valid topological orders. Only JavaScript is allowed.",
+      "inputs": [
+        [
+          [0, 1],
+          [0, 2],
+          [1, 3],
+          [2, 3]
+        ]
+      ],
+      "expected": [0, 1, 2, 3],
+      "inputs description": "Input consists of a directed acyclic graph represented as an array of edges, where each edge [parent, child] represents a dependency relationship.",
+      "expected description": "An array representing one valid topological ordering of the vertices.",
+      "difficulty": "advanced"
+    }
+  ]
 }
