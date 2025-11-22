@@ -267,8 +267,8 @@ graph.on("click", function (params) {
     dfs_exercise.selected[dfs_exercise.selectedcnt++] = params["nodes"]["0"];
     clickednode(params["nodes"]["0"]);
     dfs_exercise.checker = 0;
-    while (g.dfsarr[g.dfscount - 1].length == 0) {
-      if (g.dfscount > 1) g.dfscount--;
+    while (g.dfscount > 1 && g.dfsarr[g.dfscount - 1].length == 0) {
+      g.dfscount--;
     }
     for (var i = 0; i < g.dfsarr[g.dfscount - 1].length; i++) {
       if (g.dfsarr[g.dfscount - 1][i] == params["nodes"]["0"]) {
