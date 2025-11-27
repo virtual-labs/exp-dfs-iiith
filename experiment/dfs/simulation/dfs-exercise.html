@@ -23,10 +23,8 @@
         </ul>
       </div>
     </div> 
-    <center>
-      <div id="graph"></div>
-    </center>
-    <div id="legend" >
+    <div id="graph" style="margin: 0 auto;"></div>
+    <div id="legend">
       <ul class="legend">
         <table>
           <tr><td><b>Legend:</b></td></tr>
@@ -36,17 +34,20 @@
         </table>
       </ul>
     </div>
-    <div id="comments"class="comment-box">
+    <div id="comments" class="comment-box">
       <b>Observations:</b><br>
-      <p id = "ins"> </p>
+      <p id="ins"></p>
     </div>
-    <center>
-      <div class="buttons_practice">
-        <input type="button" value="Reset" class="button-input" id="reset" onclick="reset()">
-        <input type="button" value="New graph" class="button-input" id="New_graph" onclick="regen()">
-        <input type="button" value="Submit" class="button-input" id="Submit" onclick="submit()">
-      </div>
-    </center>
+
+    <div class="node-sequence-section" id="node-sequence-section" style="display:none;">
+      <span id="node-sequence-label">Node Sequence:</span>
+      <span id="node-sequence"></span>
+    </div>
+    <div class="buttons_practice">
+      <input type="button" value="Reset" class="button-input" id="reset" onclick="reset()">
+      <input type="button" value="New graph" class="button-input" id="New_graph" onclick="regen()">
+      <input type="button" value="Submit" class="button-input" id="Submit" onclick="submit()">
+    </div>
     <script src="docs/static/libs/vis.min.js"></script>
     <script src="js/Algo.js"></script> 
     <script src="js/data.js"></script> 
