@@ -1,0 +1,19 @@
+[{
+	"question": "1. Which one of the following data structures is used in DFS?",
+	"answers": {
+		"a": "Heap ",
+		"b": " Dequeue ",
+		"c": " Linked List  ",
+		"d": " Stack  "
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "2.  What is backtracking in DFS?",
+	"answers": {
+		"a": "  Going to the parent node if all the children nodes have been visited ",
+		"b": " Going to the parent node when a children node has been visited  ",
+		"c": "Going to the sibling node when all the children nodes have been visited",
+		"d": "Going to the sibling node when a children node has been visited "
+	},
+	"correctAnswer": "a"
+}]
