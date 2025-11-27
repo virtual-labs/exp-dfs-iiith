@@ -26,9 +26,7 @@
     </div>
      
     
-    <center>   
-      <div id="graph"></div> 
-    </center>
+    <div id="graph" style="margin: 0 auto;"></div>
 
     <div id="legend">
       <ul class="legend">
@@ -52,24 +50,21 @@
       </ul>
     </div>
     
-    <center>
-      <div>
-        <p id="ranger">
-          Min.Speed <input type="range" min="100" max="2500" id="interval" class="slider_input" value="1500" onclick="change_interval();" onchange="change_interval();"> Max.Speed
-        </p>
-      </div>
-    </center>
+    <div style="width:100%;max-width:100vw;margin:0 auto;">
+      <p id="ranger">
+        Min.Speed <input type="range" min="100" max="2500" id="interval" class="slider_input" value="1500" onclick="change_interval();" onchange="change_interval();"> Max.Speed
+      </p>
+    </div>
     
     <div id="comments-demo" class="comment-box">
-      <b>Observations:</b><br> 
-      <p id="ins">Select a node and click on start to start DFS   from that node</p>
+      <b>Observations:</b><br>
+      <p id="ins">Select a node and click on start to start DFS from that node</p>
     </div>
     
     <div class="buttons">
       <input type="button" value="Reset" class="button-input" id="reset">
       <input type="button" value="New graph" class="button-input" id="New_graph">
       <input type="button" value="Start" class="button-input" id="pause">
-      <!-- <input type="button" value="Start" class="button-input" id="start"> -->
     </div>
     
     <script src="static/libs/vis.min.js"></script>
