@@ -306,7 +306,7 @@ function clicking() {
           clickednodeid(dfs_demo.dfsres[1][dfs_demo.count].node) +
           "</b>(i.e <b>" +
           clickednodeid(
-            dfs_demo.dfsres[0][dfs_demo.dfsres[1][dfs_demo.count].node]
+            dfs_demo.dfsres[0][dfs_demo.dfsres[1][dfs_demo.count].node],
           ) +
           "</b>) is the current node";
       }
@@ -328,7 +328,7 @@ function clicking() {
         document.getElementById("ins").innerHTML =
           "Node <b>" +
           clickednodeid(
-            dfs_demo.dfsres[0][dfs_demo.dfsres[1][dfs_demo.count].node]
+            dfs_demo.dfsres[0][dfs_demo.dfsres[1][dfs_demo.count].node],
           ) +
           "</b> is visited";
       }
@@ -338,7 +338,7 @@ function clicking() {
           clickednodeid(dfs_demo.dfsres[1][dfs_demo.count].node) +
           " is the unvisited child of " +
           clickednodeid(
-            dfs_demo.dfsres[0][dfs_demo.dfsres[1][dfs_demo.count].node]
+            dfs_demo.dfsres[0][dfs_demo.dfsres[1][dfs_demo.count].node],
           ) +
           ",<br>node <b>" +
           clickednodeid(dfs_demo.dfsres[1][dfs_demo.count].node) +
@@ -413,7 +413,7 @@ function start() {
       document.getElementById("pause").style.cursor = "pointer";
       dfs_demo.time = setInterval(
         clicking,
-        3000 - document.getElementById("interval").value
+        3000 - document.getElementById("interval").value,
       );
     }
   }
@@ -434,7 +434,7 @@ function pause() {
     clearInterval(dfs_demo.time);
     dfs_demo.time = setInterval(
       clicking,
-      5000 - document.getElementById("interval").value
+      5000 - document.getElementById("interval").value,
     );
     document.getElementById("pause").value = "Pause";
   }
@@ -447,10 +447,21 @@ function change_interval() {
     clearInterval(dfs_demo.time);
     dfs_demo.time = setInterval(
       clicking,
-      5000 - document.getElementById("interval").value
+      5000 - document.getElementById("interval").value,
     );
     document.getElementById("pause").style.backgroundColor = "#288ec8";
   } else document.getElementById("pause").style.backgroundColor = "grey";
+}
+function getIntervalFromSlider() {
+  var slider = document.getElementById("interval");
+  var min = parseInt(slider.min);
+  var max = parseInt(slider.max);
+  var val = parseInt(slider.value);
+  // Invert so left=slow (max interval), right=fast (min interval)
+  var interval = max - (val - min);
+  if (interval < min) interval = min;
+  if (interval > max) interval = max;
+  return interval;
 }
 function handlers() {
   document.getElementById("reset").onclick = function () {
