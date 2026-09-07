@@ -1,6 +1,7 @@
 {
   "unit-type": "lu",
   "label": "Depth First Search",
+  "LaTeXinMD": "true",
   "basedir": ".",
   "code-assessment": {
     "include": true,
@@ -47,8 +48,8 @@
         {
           "unit-type": "aim"
         },
-        
-	{
+
+        {
           "unit-type": "task",
           "label": " Concept",
           "content-type": "video",
@@ -76,23 +77,23 @@
           "source": "simulation/dfs-practice.html",
           "target": "dfs-practice.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Exercise",
           "content-type": "simulation",
           "source": "simulation/dfs-exercise.html",
           "target": "dfs-exercise.html"
         },
-      {
-      "unit-type": "task",
-      "label": "Quiz",
-      "content-type": "assesment",
-      "source": "dfs-quiz.json",
-      "target": "dfs-quiz.html"
-    }
+        {
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "dfs-quiz.json",
+          "target": "dfs-quiz.html"
+        }
       ]
-     },
-     {
+    },
+    {
       "unit-type": "lu",
       "label": "Analysis",
       "basedir": "analysis",
@@ -100,7 +101,7 @@
         {
           "unit-type": "aim"
         },
-	
+
         {
           "unit-type": "task",
           "label": "Space and Time Complexitiy ",
@@ -108,31 +109,30 @@
           "source": "space-and-time-complexitiy-of-dfs.md",
           "target": "space-and-time-complexitiy-of-dfs.html"
         },
-        
-        
-	{
+
+        {
           "unit-type": "task",
           "label": "Comparison of BFS with DFS",
           "content-type": "video",
           "source": "comparison-of-bfs-with-dfs.md",
           "target": "comparison-of-bfs-with-dfs.html"
         },
-	{
-      "unit-type": "task",
-      "label": "Quiz",
-      "content-type": "assesment",
-      "source": "analysis-quiz.json",
-      "target": "analysis-quiz.html"
-    }
+        {
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "analysis-quiz.json",
+          "target": "analysis-quiz.html"
+        }
       ]
     },
-      {
+    {
       "unit-type": "task",
       "label": "Posttest",
       "content-type": "assesment",
       "source": "posttest.json",
       "target": "posttest.html"
-    }, 
+    },
     {
       "unit-type": "task",
       "label": "Further Readings/References",
