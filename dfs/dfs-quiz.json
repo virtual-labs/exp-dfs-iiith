@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which one of the following data structures is used in DFS?",
+      "answers": {
+        "a": "Heap",
+        "b": "Deque",
+        "c": "Priority Queue",
+        "d": "Stack"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. A heap is not the standard data structure used to control the traversal order in DFS.",
+        "b": "Incorrect. A deque can be used in some algorithms, but it is not the standard structure associated with DFS.",
+        "c": "Incorrect. DFS does not select vertices according to priority.",
+        "d": "Correct. DFS uses a stack in its iterative implementation; recursion also relies on the call stack."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What is backtracking in DFS?",
+      "answers": {
+        "a": "Going to the parent or an earlier vertex when all reachable choices from the current path have been explored",
+        "b": "Going to the parent node whenever any child node has been visited",
+        "c": "Going to a sibling node immediately after visiting one child",
+        "d": "Going to a sibling node before visiting the current vertex"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. DFS backtracks to an earlier vertex when the current path cannot be extended through an unvisited adjacent vertex.",
+        "b": "Incorrect. Visiting one child does not by itself cause DFS to backtrack.",
+        "c": "Incorrect. DFS does not necessarily move directly to a sibling after visiting one child; it first continues as deeply as possible.",
+        "d": "Incorrect. DFS visits the current vertex before exploring its adjacent vertices."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "3. What should DFS do when it encounters an already visited vertex?",
+      "answers": {
+        "a": "Visit the vertex again immediately.",
+        "b": "Ignore that vertex for the current traversal step and continue with another unvisited option if available.",
+        "c": "Delete the vertex from the graph.",
+        "d": "Restart the entire DFS from the source."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Repeatedly processing an already visited vertex can cause unnecessary revisits and may lead to cycles in the traversal process.",
+        "b": "Correct. DFS uses the visited status to avoid processing the same vertex again and continues with another unvisited adjacent vertex when possible.",
+        "c": "Incorrect. DFS does not modify the graph by deleting vertices.",
+        "d": "Incorrect. Encountering a visited vertex does not require restarting the traversal."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which statement correctly describes recursive DFS?",
+      "answers": {
+        "a": "It requires a queue to store all vertices before traversal begins.",
+        "b": "It visits only vertices having exactly one neighbor.",
+        "c": "It uses recursive function calls, with the call stack supporting the depth-first traversal and backtracking.",
+        "d": "It cannot be applied to graphs containing cycles."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A queue is not the defining structure for recursive DFS.",
+        "b": "Incorrect. DFS can visit vertices with any number of adjacent vertices.",
+        "c": "Correct. Recursive DFS uses function calls to move deeper into the graph, while the call stack preserves the state needed for backtracking.",
+        "d": "Incorrect. Recursive DFS can be applied to cyclic graphs when visited information is maintained."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. In DFS, why is a visited array or set maintained?",
+      "answers": {
+        "a": "To store the numerical value of every edge",
+        "b": "To determine the weight of each vertex",
+        "c": "To sort vertices before traversal",
+        "d": "To prevent a vertex from being processed repeatedly"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. A visited array or set records traversal status rather than edge values.",
+        "b": "Incorrect. Visited information does not represent vertex weights.",
+        "c": "Incorrect. DFS does not use the visited structure to sort vertices.",
+        "d": "Correct. Marking vertices as visited prevents DFS from repeatedly processing the same vertex."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which of the following can DFS be used for?",
+      "answers": {
+        "a": "Finding connected components",
+        "b": "Finding the average value of all vertex labels",
+        "c": "Changing all directed edges into undirected edges",
+        "d": "Automatically assigning numerical labels to all vertices"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. DFS can be used to explore all vertices reachable from a starting vertex and thereby identify connected components.",
+        "b": "Incorrect. DFS may visit vertex labels, but computing their average is not a specific application of DFS.",
+        "c": "Incorrect. DFS does not modify the direction of edges.",
+        "d": "Incorrect. DFS can assign traversal information, but automatically assigning arbitrary numerical labels is not its purpose."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "7. Which of the following best describes the DFS traversal of a graph with cycles?",
+      "answers": {
+        "a": "DFS must stop immediately when it encounters any edge that forms a cycle.",
+        "b": "DFS can continue correctly by using visited information to avoid repeatedly processing vertices.",
+        "c": "DFS cannot be applied to a cyclic graph.",
+        "d": "DFS removes every cyclic edge before continuing."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Encountering an edge associated with a cycle does not necessarily terminate the entire DFS traversal.",
+        "b": "Correct. A visited structure allows DFS to handle cyclic graphs without repeatedly processing the same vertices.",
+        "c": "Incorrect. DFS is applicable to both cyclic and acyclic graphs.",
+        "d": "Incorrect. DFS traverses the graph without removing edges."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Suppose DFS starts at vertex $A$ and follows the path $A \\rightarrow B \\rightarrow C$. Vertex $C$ has no unvisited adjacent vertex. What should happen next?",
+      "answers": {
+        "a": "DFS deletes $C$.",
+        "b": "DFS starts again from $A$ without returning through the current path.",
+        "c": "DFS backtracks from $C$ to an earlier vertex such as $B$ to look for another unvisited path.",
+        "d": "DFS converts the path into a queue."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Reaching a vertex with no unvisited neighbor does not cause DFS to delete it.",
+        "b": "Incorrect. DFS uses the existing traversal state and backtracks rather than restarting unnecessarily.",
+        "c": "Correct. When $C$ cannot be explored further, DFS backtracks to an earlier vertex and checks whether another unvisited adjacent vertex is available.",
+        "d": "Incorrect. A traversal path is not converted into a queue when DFS backtracks."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. If an iterative DFS uses a stack, which vertex is processed first when several vertices are available on the stack?",
+      "answers": {
+        "a": "The vertex most recently pushed onto the stack",
+        "b": "The vertex that was pushed first",
+        "c": "The vertex with the smallest label",
+        "d": "The vertex with the largest label"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. A stack follows the LIFO principle, so the most recently pushed vertex is the next one removed for processing.",
+        "b": "Incorrect. Processing the first pushed vertex would follow FIFO behavior rather than the usual stack behavior.",
+        "c": "Incorrect. A stack does not select its next element based on numerical labels.",
+        "d": "Incorrect. A stack does not select its next element based on the largest numerical label."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}

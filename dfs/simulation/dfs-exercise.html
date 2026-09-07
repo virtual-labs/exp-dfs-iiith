@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>DFS Exercise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/libs/vis.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/dfs.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/common-styles-responsive.css">
+  </head>
+  <body>
+    <div class="instruction-box">
+      <button class="collapsible"> Instructions </button>
+      <div class ="content">
+        <ul>
+          <li>Click on the graph to enable the border.</li>
+          <li>Click the node which you want to select as source node of the DFS .</li>
+          <li>Click on the nodes as they would appear on performing DFS on selected source node.</li>
+          <li>After selecting the nodes, click on the <b>Submit</b> button to check whether the selected sequence is correct or not.</li>
+          <li>Click on <b>New Graph</b> to start over with a new graph.</li>
+          <li>Click on <b>Reset</b> to start over with the same graph.</li>
+          <li>Zoom or Adjust graph by dragging nodes according to your convenience.</li>
+        </ul>
+      </div>
+    </div> 
+    <div id="graph" style="margin: 0 auto;"></div>
+    <div id="legend">
+      <ul class="legend">
+        <table>
+          <tr><td><b>Legend:</b></td></tr>
+          <tr><td><span class="blue"></span>&ensp;Source Node</td></tr>
+          <tr><td><span class="white"></span>&ensp;Unselected Node</td></tr>
+          <tr><td><span class="green"></span>&ensp;Selected Node</td></tr>
+        </table>
+      </ul>
+    </div>
+    <div id="comments" class="comment-box">
+      <b>Observations:</b><br>
+      <p id="ins"></p>
+    </div>
+
+    <div class="node-sequence-section" id="node-sequence-section" style="display:none;">
+      <span id="node-sequence-label">Node Sequence:</span>
+      <span id="node-sequence"></span>
+    </div>
+    <div class="buttons_practice">
+      <input type="button" value="Reset" class="button-input" id="reset" onclick="reset()">
+      <input type="button" value="New graph" class="button-input" id="New_graph" onclick="regen()">
+      <input type="button" value="Submit" class="button-input" id="Submit" onclick="submit()">
+    </div>
+    <script src="docs/static/libs/vis.min.js"></script>
+    <script src="js/Algo.js"></script> 
+    <script src="js/data.js"></script> 
+    <script src="js/dfs-ex.js"></script> 
+    <script src="../../assets/js/instruction-box.js"></script>
+    <script src="../../assets/js/iframeResize.js"></script>
+        
+        </body>
+  </body>
+</html>
