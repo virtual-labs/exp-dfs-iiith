@@ -1,19 +1,158 @@
-[{
-	"question": "1. If there are 10 edges in a graph, in the worst case how many edges can be traversed?",
-	"answers": {
-		"a": "0",
-		"b": "1 ",
-		"c": " 5 ",
-		"d": "10 "
-	},
-	"correctAnswer": "d"
-}, {
-	"question": "2. Which one of the following is correct?",
-	"answers": {
-		"a": " DFS uses queue & BFS can be done using stack & recursion.  ",
-		"b": " In DFS, all the neighbors are traversed before other nodes. ",
-		"c": "DFS is a vertex-based algorithm while BFS is an edge-based algorithm.",
-		"d": "BFS is an optimal algorithm while DFS is not optimal."
-	},
-	"correctAnswer": "d"
-}]
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. If there are 10 edges in a graph, in the worst case how many edges can DFS examine?",
+      "answers": {
+        "a": "0",
+        "b": "1",
+        "c": "5",
+        "d": "10"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. DFS may need to examine edges in order to explore the graph.",
+        "b": "Incorrect. A graph containing multiple edges may require DFS to examine more than one edge.",
+        "c": "Incorrect. DFS is not limited to examining only half of the edges in the graph.",
+        "d": "Correct. In an appropriate graph representation, DFS may need to examine all 10 edges during traversal."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "2. Which one of the following statements correctly compares DFS and BFS?",
+      "answers": {
+        "a": "DFS uses a queue, while BFS uses a stack.",
+        "b": "In DFS, all neighbors are always traversed before any deeper vertex is explored.",
+        "c": "DFS is a vertex-based algorithm while BFS is an edge-based algorithm.",
+        "d": "BFS can find a shortest path in an unweighted graph, whereas DFS does not guarantee a shortest path."
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. The standard implementations use different traversal structures from those stated here.",
+        "b": "Incorrect. DFS can move deeper along a path before all neighboring vertices of the current vertex have been explored.",
+        "c": "Incorrect. Both DFS and BFS systematically process vertices and examine edges.",
+        "d": "Correct. BFS explores an unweighted graph level by level and can therefore find a shortest path in terms of the number of edges, while DFS does not provide that guarantee."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "3. What is the primary goal of DFS when it is started from a particular source vertex?",
+      "answers": {
+        "a": "To explore reachable vertices by going as deep as possible before backtracking.",
+        "b": "To visit only the immediate neighbors of the source.",
+        "c": "To sort all vertex labels.",
+        "d": "To remove all edges from the graph."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. DFS explores reachable vertices by following a path deeply and backtracking when necessary.",
+        "b": "Incorrect. Limiting the traversal to immediate neighbors would not explore the graph deeply.",
+        "c": "Incorrect. Sorting vertex labels is not the purpose of DFS.",
+        "d": "Incorrect. DFS traverses the graph without removing its edges."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What happens when DFS reaches a vertex whose adjacent vertices have already been visited?",
+      "answers": {
+        "a": "DFS creates a new vertex.",
+        "b": "DFS backtracks to an earlier vertex to continue exploring another available path.",
+        "c": "DFS deletes the current vertex.",
+        "d": "DFS changes the graph from directed to undirected."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. DFS does not create new vertices during traversal.",
+        "b": "Correct. When there are no unvisited adjacent vertices to continue from the current vertex, DFS backtracks to an earlier vertex.",
+        "c": "Incorrect. Reaching a fully explored vertex does not cause DFS to delete it.",
+        "d": "Incorrect. Traversal does not change whether the graph is directed or undirected."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which data structure is commonly used to implement iterative DFS?",
+      "answers": {
+        "a": "Queue",
+        "b": "Heap",
+        "c": "Stack",
+        "d": "Priority queue"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A queue is associated with the usual breadth-first traversal strategy.",
+        "b": "Incorrect. A heap is not the standard data structure used to control the order of iterative DFS.",
+        "c": "Correct. Iterative DFS commonly uses a stack to keep track of vertices that still need to be explored.",
+        "d": "Incorrect. DFS does not require vertices to be processed according to priority."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Why can recursion be used to implement DFS?",
+      "answers": {
+        "a": "Recursion automatically sorts the graph.",
+        "b": "Recursion removes the need to mark vertices as visited.",
+        "c": "Recursion converts the graph into a tree.",
+        "d": "The function call stack naturally stores the pending vertices and supports backtracking."
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Recursion does not automatically sort vertices or edges.",
+        "b": "Incorrect. A visited mechanism may still be required to prevent repeated processing of vertices.",
+        "c": "Incorrect. Using recursion does not change the original graph structure.",
+        "d": "Correct. Recursive function calls use the call stack, which naturally preserves the traversal state needed to return to earlier vertices."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. For an adjacency-list representation, why is the DFS complexity $O(V + E)$ rather than $O(V^2)$ in general?",
+      "answers": {
+        "a": "DFS ignores edges that are not part of the DFS tree.",
+        "b": "DFS visits only half of the vertices.",
+        "c": "The adjacency list allows DFS to examine the actual edges associated with each visited vertex instead of checking every possible vertex pair.",
+        "d": "DFS never examines an edge more than once in either direction."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. DFS may examine edges that do not become tree edges, including edges leading to already visited vertices.",
+        "b": "Incorrect. DFS can visit every vertex that is reachable from its starting point.",
+        "c": "Correct. An adjacency list stores the actual neighbors of each vertex, so DFS processes the vertices and the listed edges, giving $O(V + E)$ time.",
+        "d": "Incorrect. In an undirected graph, an edge can appear in the adjacency lists of both of its endpoints and may therefore be examined from both sides."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which property of DFS makes it useful for detecting cycles in a graph?",
+      "answers": {
+        "a": "DFS records traversal relationships and can identify an edge leading to a vertex that is already active in the current traversal path.",
+        "b": "DFS always visits every vertex exactly twice.",
+        "c": "DFS removes every edge after examining it.",
+        "d": "DFS requires the graph to contain no cycles before it starts."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. DFS maintains traversal information that can be used to identify edges connecting a vertex to an ancestor or an active vertex, which is important for cycle detection.",
+        "b": "Incorrect. DFS does not require every vertex to be visited exactly twice.",
+        "c": "Incorrect. DFS examines edges but does not remove them from the graph.",
+        "d": "Incorrect. DFS can be used precisely to investigate whether cycles are present."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. A DFS is started from vertex $A$ in a connected graph. If the graph contains 8 vertices, how many vertices will be visited by the DFS?",
+      "answers": {
+        "a": "1",
+        "b": "4",
+        "c": "7",
+        "d": "8"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. A connected graph contains paths from the starting vertex to all other vertices.",
+        "b": "Incorrect. A connected graph does not restrict DFS to only half of its vertices.",
+        "c": "Incorrect. The starting vertex and the other reachable vertices together make the complete set of vertices in the connected graph.",
+        "d": "Correct. Because the graph is connected, every one of its 8 vertices is reachable from $A$, so DFS visits all 8 vertices."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}
